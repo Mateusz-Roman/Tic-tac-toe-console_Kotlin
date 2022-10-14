@@ -32,6 +32,7 @@ fun main(args: Array<String>) {
         }
     }
 }
+
 fun getWinner(board: Array<String>): String?{
 
     if(checkRows(board) == "XXX") return "You win"
@@ -79,6 +80,7 @@ fun checkColumns(board: Array<String>): String?{
     return null
 
 }
+
 fun checkRows(board: Array<String>): String?{
 
     val row1 = board[0] + board[1] + board[2]
