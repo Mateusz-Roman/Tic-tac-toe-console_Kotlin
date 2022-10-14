@@ -58,11 +58,9 @@ fun checkDiagonals(board: Array<String>): String?{
     val diagonal1 = board[0]+board[4]+board[8]
     val diagonal2 = board[2]+board[4]+board[6]
 
-    if (diagonal1 == "XXX") return diagonal1
-    else if(diagonal1 =="OOO" ) return diagonal1
+    if (diagonal1 == "XXX" || diagonal1 =="OOO") return diagonal1
 
-    if (diagonal2 == "XXX") return diagonal2
-    else if(diagonal2 =="OOO" ) return diagonal2
+    if (diagonal2 == "XXX" || diagonal2 =="OOO") return diagonal2
 
     return null
 }
@@ -72,14 +70,11 @@ fun checkColumns(board: Array<String>): String?{
     val column2 = board[1] + board[4] + board[7]
     val column3 = board[2] + board[5] + board[8]
 
-    if (column1 == "XXX") return column1
-        else if(column1 =="OOO" ) return column1
+    if (column1 == "XXX" || column1 =="OOO") return column1
 
-    if (column2 == "XXX") return column2
-        else if(column2 =="OOO" ) return column2
+    if (column2 == "XXX" || column2 =="OOO") return column2
 
-    if (column3 == "XXX") return column3
-        else if(column3 =="OOO" ) return column3
+    if (column3 == "XXX" || column3 =="OOO") return column3
 
     return null
 
@@ -90,14 +85,11 @@ fun checkRows(board: Array<String>): String?{
     val row2 = board[3] + board[4] + board[5]
     val row3 = board[6] + board[7] + board[8]
 
-    if (row1 == "XXX") return row1
-        else if(row1 =="OOO" ) return row1
+    if (row1 == "XXX" || row1 =="OOO" ) return row1
 
-    if (row2 == "XXX") return row2
-        else if(row2 =="OOO" ) return row2
+    if (row2 == "XXX" || row2 =="OOO" ) return row2
 
-    if (row3 == "XXX") return row3
-        else if(row3 =="OOO" ) return row3
+    if (row3 == "XXX" || row3 =="OOO" ) return row3
 
     return null
 }
